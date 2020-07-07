@@ -4,16 +4,16 @@
 This package is based on [an example from the W3Schools Javascript Random page](https://www.w3schools.com./js/js_random.asp "W3Schools JavaScript Random").
 
 ## **Installation**
-> `npm install random-int --save`    
+> `npm install random-rgba --save`    
 
 or  
 
-> `yarn add random-int`  
+> `yarn add random-rgba`  
 
 ---
 ## **Syntax**
 
-> **`randomInt(low, high);`**
+> **`randomRgba(low, high);`**
 
 ### **Parameters**
   - `low`:   
@@ -23,26 +23,26 @@ or
 
 
 ### **Return value**  
-  - `randomInt` will return a randomly generated Integer within and including the low/high limits. 
+  - `randomRgba` will return a randomly generated Integer within and including the low/high limits. 
 ---
 ## **Usage**
 
-**Import the `randomInt` function**
+**Import the `randomRgba` function**
 
 ```
-import randomInt from "random-int";
+import randomRgba from "random-rgba";
 ```
 or
 ```
-const randomInt = require("random-int")
+const randomRgba = require("random-rgba")
 ```
 **Sample implementations**
 ```  
 // Returns a random integer between default limits of 1 and 100, inclusive.
-const myRandomInteger = randomInt();
+const myRandomInteger = randomRgba();
 
 // Returns a random integer between 1 and 10, inclusive.
-const myRandomInteger = randomInt(1, 10);
+const myRandomInteger = randomRgba(1, 10);
 ```
 ---
 ## **References**  

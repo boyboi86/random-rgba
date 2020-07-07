@@ -1,15 +1,17 @@
+var randomInt = require("@dmhtoo/random-int");
+
 /**
- * Generate a random integer within the specified range, with low and high limits included.
- * @param {number} low 
- * @param {number} high 
+ * Generate a string in the CSS format `rgba(r, g, b, a)` with random values.
+ * @param {number} alpha - optional opacity value: defaults to a random percentage
  */
-const randomInt = (low = 1, high = 100) => {
-	// Guard against non-numeric values: set NaNs to defaults.
-	if (isNaN(low)) { low = 1 };
-	if (isNaN(high)) { high = 100 };
-	// Maybe overkill, but return -1 if high is less than low.
-	if (high > low) { return -1 };
-	return Math.floor(Math.random() * (high - low + 1)) + low;
+const randomRgba = (alpha) => {
+  const a = !isNaN(alpha)
+    ? Math.min(Math.max(Number(alpha), 1), 100)
+    : randomInt(1, 100);
+  return `rgba(${randomInt(0, 255)},${randomInt(0, 255)},${randomInt(
+    0,
+    255
+  )},.${a})`;
 };
 
-module.exports = randomInt ;
+module.exports = randomRgba;
