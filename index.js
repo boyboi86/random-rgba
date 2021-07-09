@@ -1,4 +1,4 @@
-var randomInt = require("@dmhtoo/random-int");
+var {randomInt} = require("@dmhtoo/random-int");
 
 /**
  * Generate a string in the CSS format `rgba(r, g, b, a)` with random values.
