@@ -1,6 +1,6 @@
 {
   "name": "random-rgba",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Dave Held <dav3h3ld@gmail.com>",
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
   "dependencies": {
     "@dmhtoo/random-int": "^2.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
